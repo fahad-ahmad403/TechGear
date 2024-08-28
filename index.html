@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="search_section">
+            <h3>TechGear</h3>
+            <div class="search_container">
+                <div class="searchbox">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <select name="Category" id="select">
+                        <option value="Select Category">Select Category</option>
+                        <option value="Phone">Phone</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Accesories">Accesories</option>
+                        <option value="X-Box">X-Box</option>
+                        <option value="PS 5">PS 5</option>
+                        <option value="Web Cam">Web Cam</option>
+                        <option value="Headphones">Headphones</option>
+                        <option value="Handfree">Handfree</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <input type="text" id="form2" placeholder="Search for Products..."><i
+                        class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="contactbox">
+                <div class="contact">
+                    <div class="number">+00 11223 34455</div>
+                    <div class="email">techgear123@gmail.com</div>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Log in</a></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </nav>
+        <div class="mobile_nav">
+            <h3>TechGear</h3>
+            <div class="icons_section">
+                <li><i onclick="open_searchbar()" class="fa-solid fa-magnifying-glass"></i></li>
+                <div class="search_container navbar_search">
+                    <div class="searchbox mobile_searchbox">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <select name="Category" id="resp_select">
+                            <option value="Select Category">Category</option>
+                            <option value="Phone">Phone</option>
+                            <option value="Laptop">Laptop</option>
+                            <option value="Accesories">Accesories</option>
+                            <option value="X-Box">X-Box</option>
+                            <option value="PS 5">PS 5</option>
+                            <option value="Web Cam">Web Cam</option>
+                            <option value="Headphones">Headphones</option>
+                            <option value="Handfree">Handfree</option>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <input type="text" id="resp_form" placeholder="Search for Products..."><i
+                            class="fa-solid fa-magnifying-glass" id="popup_searchicon"></i>
+                    </div>
+                    <i onclick="hide_searchbar()" id="popup_closebtn" class="fa-solid fa-xmark"></i>
+                    <i onclick="hide_searchbar()" id="closebtn2" class="fa-solid fa-xmark"></i>
+                </div>
+                <li><i id="mobile-cart-icon" class="fa-solid fa-cart-shopping"></i></li>
+                <li><i onclick="open_sidebar()" class="fa-solid fa-bars"></i></li>
+                <div class="sidebar">
+                    <div> <i onclick="hide_sidebar()" id="sidebar_closebtn" class="fa-solid fa-xmark"></i></div>
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="swiper swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide1">
+                        <img src="img/grey_watch.png" alt="grey watch">
+                        <div class="slide1_headingtext">
+                            <div class="slide1_subheading">Discover a smarter way to live</div>
+                            <h1 class="slide1_heading">Samsung <br> Smart Watch</h1>
+                            <p class="slide1_text">Experience the future of wearable tech.</p>
+                            <div class="slide1_btn">Explore Now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide2">
+                        <div class="slide2_headingtext">
+                            <div class="slide2_subheading">Beast Solo</div>
+                            <h1 class="slide2_heading">Wireless <br> Headphones</h1>
+                            <p class="slide2_text"> Enjoy your music without limits
+                            </p>
+                            <div class="slide2_btn">Explore Now</div>
+                        </div>
+                        <img src="img/red_headphone.png" alt="red headphones">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide3">
+                        <div class="slide3_headingtext">
+                            <div class="slide3_subheading">Everyone Dream Console</div>
+                            <h1 class="slide3_heading">Play Station 5</h1>
+                            <p class="slide3_text">Discover the Gaming World.</p>
+                            <div class="slide3_btn">Explore Now</div>
+                        </div>
+                        <img src="img/ps5.png" alt="play station 5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-button-next1"></div>
+            <div class="swiper-button-prev swiper-button-prev1"></div>
+        </div>
+    </section>
+    <section class="productcard_section">
+        <div class="product_container1">
+            <div class="product1_box pbox">
+                <div class="product1_subheading">Enjoy</div>
+                <div class="product1_heading">With</div>
+                <div class="product1_text">Earphone</div>
+                <div class="product1_btn">Browse</div>
+                <div><img src="img/handfree.png" alt="handfree"></div>
+            </div>
+            <div class="product2_box pbox">
+                <div class="product2_subheading">New</div>
+                <div class="product2_heading">Wear</div>
+                <div class="product2_text">Gadget</div>
+                <div class="product2_btn">Browse</div>
+                <div><img src="img/yellow_watch.png" alt="yellow watch"></div>
+            </div>
+            <div class="product3_box pbox">
+                <div class="product3_subheading">Trend</div>
+                <div class="product3_heading">Devices</div>
+                <div class="product3_text">Laptop</div>
+                <div class="product3_btn">Browse</div>
+                <div><img src="img/laptop.png" alt="laptop"></div>
+            </div>
+        </div>
+        <div class="product_container2">
+            <div class="product4_box pbox">
+                <div class="product4_subheading">Best</div>
+                <div class="product4_heading">Gaming</div>
+                <div class="product4_text">Console</div>
+                <div class="product4_btn">Browse</div>
+                <div><img src="img/ps4.png" alt="play station 4"></div>
+            </div>
+            <div class="product5_box pbox">
+                <div class="product5_subheading">Play</div>
+                <div class="product5_heading">Game</div>
+                <div class="product5_text">Oculus</div>
+                <div class="product5_btn">Browse</div>
+                <div><img src="img/vrhs.png" alt="virtual reality head set person"></div>
+            </div>
+            <div class="product6_box pbox">
+                <div class="product6_subheading">New</div>
+                <div class="product6_heading">Amazon</div>
+                <div class="product6_text">Speaker</div>
+                <div class="product6_btn">Browse</div>
+                <div><img src="img/speaker.png" alt="alexa speaker"></div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services_container1">
+            <div><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="services_text">
+                <div class="services_heading">Free Shipping</div>
+                <div class="services_subheading">Free Shipping on All Orders</div>
+            </div>
+        </div>
+        <div class="services_container2">
+            <div><i class="fa-solid fa-award"></i></div>
+            <div class="services_text">
+                <div class="services_heading">Money Guarantee</div>
+                <div class="services_subheading">30 Days Money Back</div>
+            </div>
+        </div>
+        <div class="services_container3">
+            <div><i class="fa-solid fa-handshake-angle"></i></div>
+            <div class="services_text">
+                <div class="services_heading">Online Support 24/7</div>
+                <div class="services_subheading">Technical Support 24/7</div>
+            </div>
+        </div>
+        <div class="services_container4">
+            <div><i class="fa-regular fa-credit-card"></i></div>
+            <div class="services_text">
+                <div class="services_heading">Secure Payment</div>
+                <div class="services_subheading">All Crads Accepted</div>
+            </div>
+        </div>
+    </section>
+    <section class="discount1_section">
+        <div class="discount_container">
+            <div class="discount_text1">
+                <div class="subheading1">30% OFF</div>
+                <div class="heading1">FINE <br> SMILE</div>
+                <div class="text1">9 Oct TO 22 Nov</div>
+            </div>
+            <img src="img/blue_headphone.png" alt="blue headphone">
+            <div class="discount_text2">
+                <div class="subheading2">Beast Solo Air</div>
+                <div class="heading2">Summer Sale</div>
+                <div class="text2">Companies that grow from 200 to 1800 <br> employees in the last 10 months</div>
+                <div class="discount_btn">Shop</div>
+            </div>
+        </div>
+    </section>
+    <section class="cards_section">
+        <div class="swiper swiper2">
+            <h1 class="products_heading">Best Selling Products</h1>
+            <div class="swiper-wrapper s2swiper-wrapper">
+                <div class="swiper-slide s2slide1">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product1.png" alt="smart watch">
+                    </div>
+                    <div class="product_name">Smart Watch</div>
+                    <div class="product_price">$ 299</div>
+                </div>
+                <div class="swiper-slide s2slide2">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product2.png" alt="laptop elitebook">
+                    </div>
+                    <div class="product_name">Elitebook 810</div>
+                    <div class="product_price">$ 4,599</div>
+                </div>
+                <div class="swiper-slide s2slide3">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product3.png" alt="rocky headphones">
+                    </div>
+                    <div class="product_name">Gore C9 Headphones</div>
+                    <div class="product_price">$ 229</div>
+                </div>
+                <div class="swiper-slide s2slide4">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product4.png" alt="headphones">
+                    </div>
+                    <div class="product_name">360 Gear Camera</div>
+                    <div class="product_price">$ 829</div>
+                </div>
+                <div class="swiper-slide s2slide5">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product5.png" alt="Wireless headphones">
+                    </div>
+                    <div class="product_name">Wireless Audio System</div>
+                    <div class="product_price">$ 859</div>
+                </div>
+                <div class="swiper-slide s2slide6">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product6.png" alt="Game Console Controller">
+                    </div>
+                    <div class="product_name">Game Console Controller</div>
+                    <div class="product_price">$ 1599</div>
+                </div>
+                <div class="swiper-slide s2slide7">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product7.png" alt="Gore Wear C9 headphones">
+                    </div>
+                    <div class="product_name">Probook 820</div>
+                    <div class="product_price">$ 4240</div>
+                </div>
+                <div class="swiper-slide s2slide8">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product8.png" alt="Metallic headphones">
+                    </div>
+                    <div class="product_name">Metallic Beats</div>
+                    <div class="product_price">$ 320</div>
+                </div>
+                <div class="swiper-slide s2slide9">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product9.png" alt="Metallic headphones">
+                    </div>
+                    <div class="product_name">Metallic Headphones</div>
+                    <div class="product_price">$ 370</div>
+                </div>
+                <div class="swiper-slide s2slide10">
+                    <div class="slidecard">
+                        <div> <i class="fa-solid fa-heart" onclick="displaytext(this)"></i></div>
+                        <img src="img/product10.png" alt="Metallic headphones">
+                    </div>
+                    <div class="product_name">Gaming Headphones</div>
+                    <div class="product_price">$ 560</div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-button-next2"></div>
+            <div class="swiper-button-prev swiper-button-prev2"></div>
+
+            <div class="heart_text1">Item added to liked</div>
+            <div class="heart_text2">Item removed from liked</div>
+        </div>
+    </section>
+    <section class="discount2_section">
+        <div class="discount_container d_container2">
+            <div class="discount_text1">
+                <div class="subheading1">30% OFF</div>
+                <div class="heading1">HAPPY <br> HOURS</div>
+                <div class="text1">9 Oct TO 22 Nov</div>
+            </div>
+            <img src="img/green_watch.png" alt="green watch">
+            <div class="discount_text2">
+                <div class="subheading2">Smart Watch <br> Technology</div>
+                <div class="heading2">Summer Sale</div>
+                <div class="text2">Companies that grow from 200 to 1800 <br> employees in the last 10 months</div>
+                <div class="discount_btn">Shop</div>
+            </div>
+        </div>
+    </section>
+    <section class="discount_reminder">
+        <div class="reminder_text">20% OFF When Paying With Debit Card <i class="fa-solid fa-tags"></i></div>
+
+    </section>
+    <section class="news_section">
+        <div class="news_heading">Recent News</div>
+        <div class="news_container">
+            <div class="news_box">
+                <img src="img/news1.jpg" alt="new1">
+                <div class="news_subheading">October 5, 2019 by Paul
+                </div>
+                <div class="news_headingtext">How to choose perfect gadgets</div>
+                <div class="news_text">When, while the lovely valley teems with vapour around me, and the meridian sun
+                    strikes the upper...</div>
+            </div>
+            <div class="news_box">
+                <img src="img/news2.jpg" alt="new2">
+                <div class="news_subheading">October 5, 2019 by Paul</div>
+                <div class="news_headingtext">How to choose perfect gadgets</div>
+                <div class="news_text">When, while the lovely valley teems with vapour around me, and the meridian sun
+                    strikes the upper...</div>
+            </div>
+            <div class="news_box">
+                <img src="img/news3.jpg" alt="new3">
+                <div class="news_subheading">October 5, 2019 by Paul</div>
+                <div class="news_headingtext">How to choose perfect gadgets</div>
+                <div class="news_text">When, while the lovely valley teems with vapour around me, and the meridian sun
+                    strikes the upper...</div>
+            </div>
+        </div>
+    </section>
+    <section class="sponser_section">
+        <div class="sponser_container">
+            <img src="img/sponser1.png" alt="sponser1">
+            <img src="img/sponser2.png" alt="sponser2">
+            <img src="img/sponser3.png" alt="sponser3">
+            <img src="img/sponser4.png" alt="sponser4">
+            <img src="img/sponser5.png" alt="sponser5">
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_container1">
+                <div class="footer_heading">TechGear</div>
+                <div class="footer_text">&#169;2024TechGear <br> All rights reserved <br> Privacy Policy <br> Terms &
+                    Conditions</div>
+                <div class="social_contacts">
+                    <img src="img/facebook.png" alt="facebook">
+                    <img src="img/insta.png" alt="insta">
+                    <img src="img/linkedin.png" alt="linkedin">
+                    <img src="img/x.png" alt="x">
+                </div>
+            </div>
+            <div class="footer_container2">
+                <div class="links_heading">Quick Links</div>
+                <li>Home</li>
+                <li>About</li>
+                <li>Shop</li>
+                <li>Contact</li>
+            </div>
+            <div class="footer_container3">
+                <div class="f3_heading">Contact</div>
+                <div class="f3_subheading">+00 11223 34455 Stock Exchange Building, Stock Exchange Road, Karachi-74000,
+                    Pakistan. LSE Plaza, South Tower Ground Floor 19</div>
+            </div>
+            <div class="footer_container4">
+                <div class="f4_subheading">Subscribe to our email</div>
+                <div class="f4_heading">For Latest News & Updates</div>
+                <div class="email_input">
+                    <input class="footerinput" id="form1" type="text" placeholder="Enter Your Email">
+                    <div class="f4_btn">Subscribe</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

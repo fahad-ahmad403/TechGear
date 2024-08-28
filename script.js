@@ -1,3 +1,5 @@
+// For hero section slider
+
 var swiper1 = new Swiper('.swiper1', {
 
   centeredSlides: true,
@@ -11,6 +13,8 @@ var swiper1 = new Swiper('.swiper1', {
     prevEl: '.swiper1 .swiper-button-prev1',
   },
 });
+
+// For product card slider
 
 var swiper2 = new Swiper('.swiper2', {
 
@@ -43,6 +47,8 @@ var swiper2 = new Swiper('.swiper2', {
   }
 });
 
+// For like or unlike message display
+
 const fa_heart = document.querySelectorAll(".fa-heart");
 const text1 = document.querySelector(".heart_text1");
 const text2 = document.querySelector(".heart_text2");
@@ -67,6 +73,8 @@ function displaytext(element) {
   }, 2000);
 }
 
+// For searchbar popup
+
 const navbar_search = document.querySelector(".navbar_search");
 
 function open_searchbar() {
@@ -77,6 +85,8 @@ function hide_searchbar() {
   navbar_search.classList.remove("show_searchbar");
 }
 
+// For sidebar open close
+
 const sidebar = document.querySelector(".sidebar")
 
 function open_sidebar() {
@@ -86,3 +96,18 @@ function open_sidebar() {
 function hide_sidebar() {
   sidebar.classList.remove("close_sidebar");
 }
+
+// For smooth scrolling
+
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+    console.log(e)
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)

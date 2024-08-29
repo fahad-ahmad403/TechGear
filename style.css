@@ -1549,8 +1549,7 @@ footer {
 
     .heart_text1,
     .heart_text2 {
-        max-width: 100%;
-        margin: 0 auto;
+        left: 0.8em;
         width: 230px;
         height: 40px;
         font-size: 0.9em;

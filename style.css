@@ -1429,6 +1429,7 @@ footer {
 
     .navbar_search input {
         padding: 0;
+        width: 150px;
     }
 
     #popup_closebtn {
@@ -1602,10 +1603,9 @@ footer {
 @media screen and (max-width: 450px) {
 
     .search {
-        display: none;
         justify-content: start;
         padding-left: 0.5em;
-        width: 200px;
+        width: 180px;
     }
 
     #popup_closebtn {

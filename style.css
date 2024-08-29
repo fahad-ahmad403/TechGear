@@ -155,9 +155,9 @@ input {
 
 .navbar_search {
     display: none;
-    justify-content: center;
     align-items: center;
     position: absolute;
+    padding: 0 1em;
     top: -100px;
     right: 0;
     width: 100%;
@@ -1602,7 +1602,7 @@ footer {
 @media screen and (max-width: 450px) {
 
     .search {
-        width: 200px;
+        width: 250px;
     }
 
     #popup_closebtn {

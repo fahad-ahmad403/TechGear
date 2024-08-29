@@ -1602,7 +1602,9 @@ footer {
 @media screen and (max-width: 450px) {
 
     .search {
-        width: 250px;
+        justify-content: start;
+        padding-left: 0.5em;
+        width: 200px;
     }
 
     #popup_closebtn {

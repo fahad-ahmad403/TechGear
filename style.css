@@ -33,7 +33,6 @@
 h3 {
     padding-right: 2em;
     font-weight: 800;
-    cursor: default;
 }
 
 .search_container {
@@ -157,10 +156,10 @@ input {
     display: none;
     align-items: center;
     position: absolute;
-    padding: 0 1em;
     top: -100px;
     right: 0;
     width: 100%;
+    padding: 0 1em;
     height: 80px;
     z-index: 10;
     background-color: var(--white);
@@ -311,7 +310,6 @@ a:hover {
 .slide2_subheading,
 .slide3_subheading {
     font-weight: 700;
-    cursor: default;
 }
 
 .slide1_heading,
@@ -320,7 +318,6 @@ a:hover {
     font-size: 3em;
     line-height: 1em;
     padding-bottom: 0.5em;
-    cursor: default;
 }
 
 .slide1 img,
@@ -354,12 +351,6 @@ a:hover {
 
 .slide3_btn:hover {
     background: linear-gradient(to right, rgb(237, 160, 132), rgb(250, 243, 240));
-}
-
-.slide1_text,
-.slide2_text,
-.slide3_text {
-    cursor: default;
 }
 
 /* Product cards starts from here */
@@ -441,7 +432,6 @@ a:hover {
 .product6_subheading {
     font-size: 1.5em;
     font-weight: bold;
-    cursor: default;
 }
 
 .product1_subheading,
@@ -455,13 +445,11 @@ a:hover {
 .product6_subheading,
 .product6_heading {
     color: var(--white);
-    cursor: default;
 }
 
 .product4_subheading,
 .product4_heading {
     color: var(--black);
-    cursor: default;
 }
 
 .product1_text,
@@ -473,7 +461,6 @@ a:hover {
     font-size: 3em;
     font-weight: 800;
     color: rgba(255, 255, 255, 0.5);
-    cursor: default;
 }
 
 .product1_btn,
@@ -624,13 +611,11 @@ a:hover {
 
 .services_heading {
     font-weight: 600;
-    cursor: default;
 }
 
 .services_subheading {
     font-size: 0.8em;
     color: var(--grey);
-    cursor: default;
 }
 
 /* Discount section starts from here */
@@ -689,25 +674,21 @@ a:hover {
 .discount_text1 {
     padding-left: 5em;
     color: var(--white);
-    cursor: default;
 }
 
 .heading1 {
     line-height: 1em;
     font-size: 7em;
     font-weight: 800;
-    cursor: default;
 }
 
 .discount_text2 {
-    padding-right: 3em;
+    padding-right: 5em;
     color: var(--white);
-    cursor: default;
 }
 
 .heading2 {
     font-size: 3em;
-    cursor: default;
 }
 
 .discount_btn {
@@ -751,7 +732,6 @@ a:hover {
     align-items: center;
     padding-bottom: 1em;
     font-size: 3em;
-    cursor: default;
 }
 
 .s2slide1 img,
@@ -809,9 +789,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    z-index: 9;
+    z-index: 99;
     transition: bottom 0.5s;
-    cursor: default;
 }
 
 .heart_text1 {
@@ -845,7 +824,6 @@ a:hover {
     margin: 0 auto;
     background: linear-gradient(to right, rgb(170, 166, 165, 0.8), rgba(235, 235, 235, 0.6));
     border-radius: 10px;
-    cursor: default;
 }
 
 .reminder_text {
@@ -977,8 +955,8 @@ footer {
     width: 150px;
 }
 
-.social_contacts img {
-    width: 20px;
+.social_contacts i {
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -1049,6 +1027,45 @@ footer {
     border-radius: 20px;
     font-size: 0.7em;
     cursor: pointer;
+}
+
+@media (hover: none) {
+
+    a {
+        color: var(--black);
+    }
+
+    .slide1_btn:hover,
+    .slide2_btn:hover,
+    .slide3_btn:hover {
+        background: var(--white);
+    }
+
+    .product1_box:hover,
+    .product2_box:hover,
+    .product3_box:hover,
+    .product4_box:hover,
+    .product5_box:hover,
+    .product6_box:hover {
+        box-shadow: none;
+    }
+
+    .product1_btn:hover,
+    .product2_btn:hover,
+    .product3_btn:hover,
+    .product4_btn:hover,
+    .product5_btn:hover,
+    .product6_btn:hover,
+    .discount_btn:hover {
+        background-color: var(--white);
+        color: var(--black);
+    }
+
+    .discount_container:hover,
+    .d_container2:hover,
+    .slidecard:hover {
+        box-shadow: none;
+    }
 }
 
 @media screen and (max-width: 1045px) {
@@ -1151,7 +1168,7 @@ footer {
     }
 
     .discount_text2 {
-        padding-right: 1em;
+        padding-right: 0;
         padding-top: 5em;
         font-size: 0.8em;
     }
@@ -1263,7 +1280,7 @@ footer {
     .navbar_search {
         display: flex;
     }
-    
+
     .sidebar {
         display: flex;
     }
@@ -1344,7 +1361,6 @@ footer {
         padding-left: 0;
         text-align: center;
         align-items: center;
-        z-index: 99;
     }
 
     .discount_text2 {
@@ -1543,7 +1559,7 @@ footer {
     .swiper-button-next {
         padding-right: 0.5em;
     }
-    
+
     .swiper-button-prev {
         padding-left: 0.5em;
     }
@@ -1703,7 +1719,7 @@ footer {
     .swiper-button-next {
         padding-right: 0.5em;
     }
-    
+
     .swiper-button-prev {
         padding-left: 0.5em;
     }
@@ -1717,7 +1733,7 @@ footer {
     .product2_box img {
         width: 60%;
         left: 40%;
-        top: 20%;
+        top: 10%;
     }
 
     .product3_box img {
@@ -1725,7 +1741,7 @@ footer {
         left: 40%;
         top: 35%;
     }
-    
+
     .product4_box img {
         width: 60%;
         left: 40%;
@@ -1737,6 +1753,7 @@ footer {
         right: 0;
         top: 51%;
     }
+
     .product6_box img {
         width: 60%;
         right: 0;
@@ -1759,6 +1776,10 @@ footer {
         position: absolute;
         top: -6em;
         left: 25%;
+    }
+
+    .discount_text1 {
+        padding-top: 6em;
     }
 
     .news_section {
